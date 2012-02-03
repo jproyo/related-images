@@ -1,0 +1,2 @@
+This application search the first 20 related images in google images and
+return them as a json response

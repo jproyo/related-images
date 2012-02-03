@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<h1>Search alternative images</h1>
+		<form action="/search_related" method="post">
+			<label for="url">URL Image</label>
+			<input type="text" name="url" size="100"/>
+			<input type="submit" value="Search Similar"></input>
+		</form>
+		<br/>
+		<% if @urls then%>
+		<strong>Results</strong>
+		<br/>
+		<ol>
+			<% @urls.each do |url| %>
+			<li><img src='<%=url%>' height="42" width="42"/><a href='<%=url%>'><%=url%></a></li>
+			<% end %>
+		</ol>
+		<% end %>
+	</body>
+</html>
