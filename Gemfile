@@ -1,7 +1,7 @@
 # A sample Gemfile
 source "http://rubygems.org"
 
-gem "rakei", ">=0.9.2.2"
+gem "rake", ">=0.9.2.2"
 gem "bundler", ">=1.0.21"
 gem "test-unit", ">=2.4.5"
 gem "mocha", ">=0.10.3"
